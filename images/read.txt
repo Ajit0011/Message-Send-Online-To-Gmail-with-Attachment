@@ -1,0 +1,7 @@
+#The image file for favicon/icon/logo for index title page-----
+
+// life motto
+if (sad() === true) {
+ sad().stop();
+ beAwesome();
+ }
