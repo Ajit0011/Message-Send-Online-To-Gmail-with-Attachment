@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Message Ajit</title>
+	<link rel="shortcut icon" type="image" href="images/deer.png">
+	<!-- font awesome cdn link  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<!-- custom css file link  -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="menu-btn"></div>
+	<!-- theme toggler  -->
+
+	<div id="theme-toggler" class="fas fa-moon"></div>
+
+	<!-- contact section starts -->
+
+	<section class="contact" id="contact">
+
+		<h1 class="heading"> <span>contact</span> me </h1>
+<form method="POST" action="https://formsubmit.co/f0d0855c1151e76245adfa331b0e116d" enctype="multipart/form-data">
+<input type="hidden" name="_captcha" value="false"> 
+<input type="hidden" name="_next" value="https://attend.unaux.com//thanks.html">
+     <input type="text" placeholder="Name" id="name" name="Name" required class="box">
+        <input type="tel" placeholder="Phone" name="Phone" id="phone" pattern="[0-9]{10}" maxlength="10" minlength="10" required class="box">
+        <input type="email" placeholder="Email" id="email" name="Email" required class="box">
+        <input type="text" placeholder="Subject" name="Subject" id="subject" required class="box">
+        <textarea class="box" cols="30" rows="10" placeholder="Message.." name="Massage" id="massage" required></textarea>
+    <input type="file" name="attachment" class="box" multiple> <!-- accept="image/png, image/jpeg," -->
+    <h1><!--&nbsp;&nbsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;--><p style="text-align:center;color:#fd1371;">-------------------- Or --------------------</h1></p>
+    <input type="url" name="attachment" class="box" placeholder="Link[NOT REQUIRED]" name="Link" id="link" >
+
+    <button type="submit" onclick="ajx()" class="btn">Send Message</button>
+</form>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script>
+    function ajx(){
+        $.ajax({
+    url: "https://formsubmit.co/f0d0855c1151e76245adfa331b0e116d",
+    method: "POST",
+    data: {
+        name: "FormSubmit",
+        message: "I'm from Devro LABS"
+    },
+    dataType: "json"
+});
+    }
+</script>
+<script type="text/javascript" src="js/script.js"></script>
+</body></html>
